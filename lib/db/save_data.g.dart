@@ -15,7 +15,11 @@ extension GetSaveDataCollection on Isar {
 
 const SaveDataSchema = CollectionSchema(
   name: r'SaveData',
-  id: 13963225654598257,
+  // WEB-FIX: original generated id 13963225654598257 exceeds JS safe-integer
+  // range (2^53) and breaks dart2js. Truncated to the nearest representable
+  // value. If you re-run build_runner, re-apply this fix (or keep the
+  // tool/fix_web_ids.sh patch step).
+  id: 13963225654598256,
   properties: {
     r'activeActivityIds': PropertySchema(
       id: 0,
