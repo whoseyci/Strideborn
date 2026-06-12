@@ -1,0 +1,27 @@
+{
+  "items": [
+    { "id": "iron_ore",       "name": "Iron Ore",        "icon": "🪨", "tier": 1, "category": "raw",       "gear_slot": null, "base_ip": 0, "stats": {} },
+    { "id": "rough_fibre",    "name": "Rough Fibre",     "icon": "🌾", "tier": 1, "category": "raw",       "gear_slot": null, "base_ip": 0, "stats": {} },
+    { "id": "oak_wood",       "name": "Oak Wood",        "icon": "🪵", "tier": 1, "category": "raw",       "gear_slot": null, "base_ip": 0, "stats": {} },
+    { "id": "common_root",    "name": "Common Root",     "icon": "🌿", "tier": 1, "category": "raw",       "gear_slot": null, "base_ip": 0, "stats": {} },
+    { "id": "coarse_hide",    "name": "Coarse Hide",     "icon": "🦌", "tier": 1, "category": "raw",       "gear_slot": null, "base_ip": 0, "stats": {} },
+    { "id": "corundum_ore",   "name": "Corundum Ore",    "icon": "🪨", "tier": 2, "category": "raw",       "gear_slot": null, "base_ip": 0, "stats": {} },
+    { "id": "linen",          "name": "Linen",           "icon": "🌾", "tier": 2, "category": "raw",       "gear_slot": null, "base_ip": 0, "stats": {} },
+    { "id": "thick_hide",     "name": "Thick Hide",      "icon": "🦌", "tier": 2, "category": "raw",       "gear_slot": null, "base_ip": 0, "stats": {} },
+    { "id": "ironweed",       "name": "Ironweed",        "icon": "🌿", "tier": 2, "category": "raw",       "gear_slot": null, "base_ip": 0, "stats": {} },
+    { "id": "ashwood",        "name": "Ashwood",         "icon": "🪵", "tier": 2, "category": "raw",       "gear_slot": null, "base_ip": 0, "stats": {} },
+    { "id": "runed_hide",     "name": "Runed Hide",      "icon": "🦌", "tier": 3, "category": "raw",       "gear_slot": null, "base_ip": 0, "stats": {} },
+    { "id": "iron_bar",       "name": "Iron Bar",        "icon": "🔩", "tier": 1, "category": "processed", "gear_slot": null, "base_ip": 0, "stats": {} },
+    { "id": "steel_bar",      "name": "Steel Bar",       "icon": "🔩", "tier": 2, "category": "processed", "gear_slot": null, "base_ip": 0, "stats": {} },
+    { "id": "oak_plank",      "name": "Oak Plank",       "icon": "🪵", "tier": 1, "category": "processed", "gear_slot": null, "base_ip": 0, "stats": {} },
+    { "id": "ashwood_plank",  "name": "Ashwood Plank",   "icon": "🪵", "tier": 2, "category": "processed", "gear_slot": null, "base_ip": 0, "stats": {} },
+    { "id": "leather_strip",  "name": "Leather Strip",   "icon": "🧵", "tier": 1, "category": "processed", "gear_slot": null, "base_ip": 0, "stats": {} },
+    { "id": "thick_leather",  "name": "Thick Leather",   "icon": "🧵", "tier": 2, "category": "processed", "gear_slot": null, "base_ip": 0, "stats": {} },
+    { "id": "rough_cloth",    "name": "Rough Cloth",     "icon": "🧶", "tier": 1, "category": "processed", "gear_slot": null, "base_ip": 0, "stats": {} },
+    { "id": "linen_cloth",    "name": "Linen Cloth",     "icon": "🧶", "tier": 2, "category": "processed", "gear_slot": null, "base_ip": 0, "stats": {} },
+    { "id": "iron_sword",     "name": "Iron Sword",      "icon": "⚔",  "tier": 1, "category": "gear",      "gear_slot": "weapon",  "base_ip": 100, "stats": {"damage_bonus": 0.05} },
+    { "id": "iron_bow",       "name": "Iron Bow",        "icon": "🏹", "tier": 1, "category": "gear",      "gear_slot": "weapon",  "base_ip": 100, "stats": {"crit_bonus": 0.03} },
+    { "id": "iron_helmet",    "name": "Iron Helmet",     "icon": "🪖", "tier": 1, "category": "gear",      "gear_slot": "helmet",  "base_ip": 100, "stats": {"dr_bonus": 0.02} },
+    { "id": "leather_chest",  "name": "Leather Chest",   "icon": "🥋", "tier": 1, "category": "gear",      "gear_slot": "chest",   "base_ip": 100, "stats": {"dodge_bonus": 0.02} }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "monsters": [
+
+    {
+      "id": "dire_wolf",
+      "name": "Dire Wolf",
+      "icon": "🐺",
+      "tier": 1,
+      "hp": 120,
+      "attack": 18,
+      "defense": 8,
+      "speed": 22,
+      "steps_to_resolve": 100,
+      "gold_reward": { "min": 3, "max": 8 },
+      "loot_table": [
+        { "item_id": "thin_hide",  "quantity": [1, 2], "chance": 0.85 },
+        { "item_id": "wolf_fang",  "quantity": [1, 1], "chance": 0.25 }
+      ],
+      "abilities": [
+        { "id": "bite",  "weight": 60 },
+        { "id": "howl",  "weight": 40 }
+      ]
+    },
+
+    {
+      "id": "rock_crab",
+      "name": "Rock Crab",
+      "icon": "🦀",
+      "tier": 1,
+      "hp": 180,
+      "attack": 12,
+      "defense": 30,
+      "speed": 8,
+      "steps_to_resolve": 120,
+      "gold_reward": { "min": 2, "max": 6 },
+      "loot_table": [
+        { "item_id": "crab_shell",  "quantity": [1, 2], "chance": 0.75 },
+        { "item_id": "limestone",   "quantity": [1, 2], "chance": 0.30 }
+      ],
+      "abilities": [
+        { "id": "slam",         "weight": 70 },
+        { "id": "basic_attack", "weight": 30 }
+      ]
+    },
+
+    {
+      "id": "field_boar",
+      "name": "Wild Boar",
+      "icon": "🐗",
+      "tier": 1,
+      "hp": 140,
+      "attack": 20,
+      "defense": 5,
+      "speed": 18,
+      "steps_to_resolve": 100,
+      "gold_reward": { "min": 2, "max": 7 },
+      "loot_table": [
+        { "item_id": "thin_hide",  "quantity": [1, 3], "chance": 0.90 },
+        { "item_id": "boar_tusk",  "quantity": [1, 1], "chance": 0.20 }
+      ],
+      "abilities": [
+        { "id": "slam",         "weight": 55 },
+        { "id": "basic_attack", "weight": 45 }
+      ]
+    },
+
+    {
+      "id": "rabid_fox",
+      "name": "Rabid Fox",
+      "icon": "🦊",
+      "tier": 1,
+      "hp": 90,
+      "attack": 22,
+      "defense": 4,
+      "speed": 30,
+      "steps_to_resolve": 80,
+      "gold_reward": { "min": 1, "max": 5 },
+      "loot_table": [
+        { "item_id": "thin_hide",  "quantity": [1, 1], "chance": 0.70 },
+        { "item_id": "fox_pelt",   "quantity": [1, 1], "chance": 0.15 }
+      ],
+      "abilities": [
+        { "id": "bite",         "weight": 70 },
+        { "id": "basic_attack", "weight": 30 }
+      ]
+    },
+
+    {
+      "id": "bandit_scout",
+      "name": "Bandit Scout",
+      "icon": "🗡",
+      "tier": 2,
+      "hp": 200,
+      "attack": 32,
+      "defense": 15,
+      "speed": 28,
+      "steps_to_resolve": 150,
+      "gold_reward": { "min": 12, "max": 28 },
+      "loot_table": [
+        { "item_id": "thin_leather", "quantity": [1, 2], "chance": 0.60 },
+        { "item_id": "iron_ore",     "quantity": [1, 3], "chance": 0.40 },
+        { "item_id": "copper_coin",  "quantity": [2, 5], "chance": 0.70 }
+      ],
+      "abilities": [
+        { "id": "basic_attack",   "weight": 40 },
+        { "id": "axe_rending_blow","weight": 35 },
+        { "id": "multishot",      "weight": 25 }
+      ]
+    },
+
+    {
+      "id": "forest_spider",
+      "name": "Forest Spider",
+      "icon": "🕷",
+      "tier": 2,
+      "hp": 160,
+      "attack": 28,
+      "defense": 10,
+      "speed": 35,
+      "steps_to_resolve": 130,
+      "gold_reward": { "min": 8, "max": 18 },
+      "loot_table": [
+        { "item_id": "spider_silk",  "quantity": [2, 4], "chance": 0.90 },
+        { "item_id": "venom_gland",  "quantity": [1, 1], "chance": 0.35 }
+      ],
+      "abilities": [
+        { "id": "poison_spit", "weight": 45 },
+        { "id": "bite",        "weight": 35 },
+        { "id": "web_shot",    "weight": 20 }
+      ]
+    },
+
+    {
+      "id": "thornwood_troll",
+      "name": "Thornwood Troll",
+      "icon": "👹",
+      "tier": 2,
+      "hp": 320,
+      "attack": 35,
+      "defense": 22,
+      "speed": 10,
+      "steps_to_resolve": 200,
+      "gold_reward": { "min": 18, "max": 40 },
+      "loot_table": [
+        { "item_id": "thick_hide",  "quantity": [2, 3], "chance": 0.80 },
+        { "item_id": "troll_club",  "quantity": [1, 1], "chance": 0.04 }
+      ],
+      "abilities": [
+        { "id": "slam",       "weight": 50 },
+        { "id": "regenerate", "weight": 30, "condition": "hp_below_50" },
+        { "id": "basic_attack","weight": 20 }
+      ],
+      "phases": [
+        {
+          "hp_threshold": 0.40,
+          "stat_modifier": { "attack": 1.30, "speed": 1.20 },
+          "force_ability": "slam"
+        }
+      ]
+    },
+
+    {
+      "id": "swamp_croc",
+      "name": "Swamp Croc",
+      "icon": "🐊",
+      "tier": 2,
+      "hp": 280,
+      "attack": 30,
+      "defense": 25,
+      "speed": 14,
+      "steps_to_resolve": 170,
+      "gold_reward": { "min": 15, "max": 32 },
+      "loot_table": [
+        { "item_id": "thick_hide",   "quantity": [2, 4], "chance": 0.85 },
+        { "item_id": "croc_tooth",   "quantity": [1, 2], "chance": 0.30 }
+      ],
+      "abilities": [
+        { "id": "bite",         "weight": 55 },
+        { "id": "slam",         "weight": 30 },
+        { "id": "basic_attack", "weight": 15 }
+      ]
+    },
+
+    {
+      "id": "stone_golem",
+      "name": "Stone Golem",
+      "icon": "🗿",
+      "tier": 3,
+      "hp": 500,
+      "attack": 55,
+      "defense": 65,
+      "speed": 6,
+      "steps_to_resolve": 300,
+      "gold_reward": { "min": 30, "max": 60 },
+      "loot_table": [
+        { "item_id": "granite_chunk",  "quantity": [3, 5], "chance": 0.95 },
+        { "item_id": "iron_ore",       "quantity": [2, 4], "chance": 0.55 },
+        { "item_id": "golem_core",     "quantity": [1, 1], "chance": 0.06 }
+      ],
+      "abilities": [
+        { "id": "slam",         "weight": 45 },
+        { "id": "armor_crush",  "weight": 30 },
+        { "id": "regenerate",   "weight": 25, "condition": "hp_below_50" }
+      ]
+    },
+
+    {
+      "id": "iron_sentinel",
+      "name": "Iron Sentinel",
+      "icon": "🤖",
+      "tier": 3,
+      "hp": 420,
+      "attack": 60,
+      "defense": 50,
+      "speed": 12,
+      "steps_to_resolve": 280,
+      "gold_reward": { "min": 25, "max": 55 },
+      "loot_table": [
+        { "item_id": "iron_ore",        "quantity": [3, 6], "chance": 0.90 },
+        { "item_id": "iron_plate_scrap","quantity": [1, 2], "chance": 0.45 },
+        { "item_id": "sentinel_core",   "quantity": [1, 1], "chance": 0.04 }
+      ],
+      "abilities": [
+        { "id": "basic_attack","weight": 40 },
+        { "id": "slam",        "weight": 35 },
+        { "id": "armor_crush", "weight": 25 }
+      ]
+    },
+
+    {
+      "id": "shadow_stalker",
+      "name": "Shadow Stalker",
+      "icon": "👤",
+      "tier": 3,
+      "hp": 340,
+      "attack": 72,
+      "defense": 18,
+      "speed": 40,
+      "steps_to_resolve": 250,
+      "gold_reward": { "min": 28, "max": 58 },
+      "loot_table": [
+        { "item_id": "shadow_essence",  "quantity": [1, 2], "chance": 0.60 },
+        { "item_id": "imbued_hide",     "quantity": [1, 2], "chance": 0.40 },
+        { "item_id": "shadowblade",     "quantity": [1, 1], "chance": 0.03 }
+      ],
+      "abilities": [
+        { "id": "dagger_stab",     "weight": 40 },
+        { "id": "dagger_envenom",  "weight": 35 },
+        { "id": "poison_spit",     "weight": 25 }
+      ]
+    },
+
+    {
+      "id": "twilight_wraith",
+      "name": "Twilight Wraith",
+      "icon": "👻",
+      "tier": 3,
+      "hp": 280,
+      "attack": 65,
+      "defense": 10,
+      "speed": 45,
+      "steps_to_resolve": 220,
+      "gold_reward": { "min": 22, "max": 48 },
+      "loot_table": [
+        { "item_id": "wraith_essence",  "quantity": [1, 2], "chance": 0.70 },
+        { "item_id": "moonbloom_fiber", "quantity": [2, 4], "chance": 0.50 }
+      ],
+      "abilities": [
+        { "id": "void_corruption", "weight": 45 },
+        { "id": "basic_attack",    "weight": 30 },
+        { "id": "cursed_staff_wither","weight": 25 }
+      ]
+    },
+
+    {
+      "id": "corrupted_guardian",
+      "name": "Corrupted Guardian",
+      "icon": "💀",
+      "tier": 4,
+      "hp": 800,
+      "attack": 80,
+      "defense": 55,
+      "speed": 12,
+      "steps_to_resolve": 500,
+      "gold_reward": { "min": 80, "max": 150 },
+      "loot_table": [
+        { "item_id": "starmetal_ore",   "quantity": [2, 4], "chance": 0.50 },
+        { "item_id": "void_crystal",    "quantity": [1, 2], "chance": 0.25 },
+        { "item_id": "corrupted_armor", "quantity": [1, 1], "chance": 0.04 }
+      ],
+      "abilities": [
+        { "id": "slam",            "weight": 40 },
+        { "id": "void_corruption", "weight": 35 },
+        { "id": "regenerate",      "weight": 25, "condition": "hp_below_50" }
+      ],
+      "phases": [
+        {
+          "hp_threshold": 0.50,
+          "stat_modifier": { "attack": 1.40, "speed": 1.30 },
+          "force_ability": "enrage"
+        }
+      ]
+    },
+
+    {
+      "id": "mire_serpent",
+      "name": "Mire Serpent",
+      "icon": "🐍",
+      "tier": 2,
+      "hp": 240,
+      "attack": 34,
+      "defense": 12,
+      "speed": 25,
+      "steps_to_resolve": 160,
+      "gold_reward": { "min": 14, "max": 30 },
+      "loot_table": [
+        { "item_id": "snake_scale",  "quantity": [2, 4], "chance": 0.85 },
+        { "item_id": "venom_gland",  "quantity": [1, 2], "chance": 0.40 }
+      ],
+      "abilities": [
+        { "id": "bite",        "weight": 40 },
+        { "id": "poison_spit", "weight": 40 },
+        { "id": "web_shot",    "weight": 20 }
+      ]
+    }
+
+  ]
+}

@@ -1,0 +1,669 @@
+{
+  "abilities": {
+
+    "basic_attack": {
+      "name": "Attack",
+      "icon": "👊",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 1.0,
+      "stamina_cost": 0,
+      "effects_on_hit": [],
+      "effects_on_self": []
+    },
+
+    "sword_slash": {
+      "name": "Iron Slash",
+      "icon": "⚔",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 1.2,
+      "stamina_cost": 15,
+      "effects_on_hit": [
+        { "type": "bleed", "magnitude": 8, "duration": 3, "chance": 0.40, "stackable": true, "max_stacks": 3 }
+      ],
+      "effects_on_self": []
+    },
+
+    "sword_battle_cry": {
+      "name": "Battle Cry",
+      "icon": "📣",
+      "target": "self",
+      "hits": 0,
+      "damage_mult": 0,
+      "stamina_cost": 20,
+      "effects_on_hit": [],
+      "effects_on_self": [
+        { "type": "attackBuff", "magnitude": 0.30, "duration": 3, "chance": 1.0 }
+      ]
+    },
+
+    "sword_execute": {
+      "name": "Finishing Blow",
+      "icon": "💥",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 1.8,
+      "stamina_cost": 30,
+      "execute_threshold": 0.25,
+      "effects_on_hit": [],
+      "effects_on_self": []
+    },
+
+    "axe_cleave": {
+      "name": "Cleave",
+      "icon": "🪓",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 1.3,
+      "stamina_cost": 20,
+      "effects_on_hit": [
+        { "type": "bleed", "magnitude": 12, "duration": 3, "chance": 0.70, "stackable": true, "max_stacks": 3 }
+      ],
+      "effects_on_self": []
+    },
+
+    "axe_rending_blow": {
+      "name": "Rending Blow",
+      "icon": "🪓",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 0.9,
+      "stamina_cost": 25,
+      "effects_on_hit": [
+        { "type": "armorBreak", "magnitude": 0.25, "duration": 3, "chance": 1.0 }
+      ],
+      "effects_on_self": []
+    },
+
+    "axe_frenzy": {
+      "name": "Frenzy",
+      "icon": "😤",
+      "target": "self",
+      "hits": 0,
+      "damage_mult": 0,
+      "stamina_cost": 15,
+      "effects_on_hit": [],
+      "effects_on_self": [
+        { "type": "attackBuff", "magnitude": 0.40, "duration": 2, "chance": 1.0 }
+      ]
+    },
+
+    "mace_slam": {
+      "name": "Skull Slam",
+      "icon": "🔨",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 1.4,
+      "stamina_cost": 30,
+      "effects_on_hit": [
+        { "type": "stun", "magnitude": 1, "duration": 1, "chance": 0.35 }
+      ],
+      "effects_on_self": []
+    },
+
+    "mace_stagger": {
+      "name": "Staggering Blow",
+      "icon": "🔨",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 0.8,
+      "stamina_cost": 20,
+      "effects_on_hit": [
+        { "type": "attackDebuff", "magnitude": 0.25, "duration": 2, "chance": 1.0 },
+        { "type": "speedDebuff",  "magnitude": 0.20, "duration": 2, "chance": 1.0 }
+      ],
+      "effects_on_self": []
+    },
+
+    "mace_fortify": {
+      "name": "Fortify",
+      "icon": "🛡",
+      "target": "self",
+      "hits": 0,
+      "damage_mult": 0,
+      "stamina_cost": 20,
+      "effects_on_hit": [],
+      "effects_on_self": [
+        { "type": "armorBuff", "magnitude": 0.40, "duration": 3, "chance": 1.0 }
+      ]
+    },
+
+    "spear_thrust": {
+      "name": "Spear Thrust",
+      "icon": "🏹",
+      "target": "single",
+      "hits": 2,
+      "damage_mult": 0.65,
+      "stamina_cost": 20,
+      "effects_on_hit": [
+        { "type": "bleed", "magnitude": 6, "duration": 4, "chance": 0.50, "stackable": true, "max_stacks": 3 }
+      ],
+      "effects_on_self": []
+    },
+
+    "spear_mark": {
+      "name": "Mark Target",
+      "icon": "🎯",
+      "target": "single",
+      "hits": 0,
+      "damage_mult": 0,
+      "stamina_cost": 15,
+      "effects_on_hit": [
+        { "type": "exposed", "magnitude": 0.30, "duration": 2, "chance": 1.0 }
+      ],
+      "effects_on_self": []
+    },
+
+    "spear_sweep": {
+      "name": "Sweeping Strike",
+      "icon": "💫",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 1.5,
+      "stamina_cost": 30,
+      "effects_on_hit": [
+        { "type": "bleed", "magnitude": 15, "duration": 3, "chance": 0.60, "stackable": true, "max_stacks": 3 }
+      ],
+      "effects_on_self": []
+    },
+
+    "dagger_stab": {
+      "name": "Quick Stab",
+      "icon": "🗡",
+      "target": "single",
+      "hits": 2,
+      "damage_mult": 0.60,
+      "stamina_cost": 12,
+      "effects_on_hit": [
+        { "type": "poison", "magnitude": 5, "duration": 4, "chance": 0.45, "stackable": true, "max_stacks": 5 }
+      ],
+      "effects_on_self": []
+    },
+
+    "dagger_envenom": {
+      "name": "Envenom",
+      "icon": "☠",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 0.5,
+      "stamina_cost": 20,
+      "effects_on_hit": [
+        { "type": "poison", "magnitude": 14, "duration": 5, "chance": 0.90, "stackable": true, "max_stacks": 5 }
+      ],
+      "effects_on_self": []
+    },
+
+    "dagger_shadowstrike": {
+      "name": "Shadowstrike",
+      "icon": "🌑",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 2.5,
+      "stamina_cost": 40,
+      "execute_threshold": 0.25,
+      "effects_on_hit": [],
+      "effects_on_self": []
+    },
+
+    "bow_quick_shot": {
+      "name": "Quick Shot",
+      "icon": "🏹",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 1.1,
+      "stamina_cost": 12,
+      "effects_on_hit": [],
+      "effects_on_self": []
+    },
+
+    "bow_poison_arrow": {
+      "name": "Poison Arrow",
+      "icon": "🏹",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 0.7,
+      "stamina_cost": 22,
+      "effects_on_hit": [
+        { "type": "poison", "magnitude": 10, "duration": 5, "chance": 0.85, "stackable": true, "max_stacks": 5 }
+      ],
+      "effects_on_self": []
+    },
+
+    "multishot": {
+      "name": "Multishot",
+      "icon": "🏹",
+      "target": "single",
+      "hits": 3,
+      "damage_mult": 0.45,
+      "stamina_cost": 30,
+      "effects_on_hit": [
+        { "type": "poison", "magnitude": 6, "duration": 4, "chance": 0.55, "stackable": true, "max_stacks": 5 }
+      ],
+      "effects_on_self": []
+    },
+
+    "crossbow_bolt": {
+      "name": "Steel Bolt",
+      "icon": "🎯",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 1.5,
+      "stamina_cost": 20,
+      "effects_on_hit": [
+        { "type": "armorBreak", "magnitude": 0.15, "duration": 2, "chance": 0.60 }
+      ],
+      "effects_on_self": []
+    },
+
+    "crossbow_burst": {
+      "name": "Rapid Burst",
+      "icon": "🎯",
+      "target": "single",
+      "hits": 3,
+      "damage_mult": 0.55,
+      "stamina_cost": 35,
+      "effects_on_hit": [
+        { "type": "exposed", "magnitude": 0.20, "duration": 2, "chance": 0.40 }
+      ],
+      "effects_on_self": []
+    },
+
+    "crossbow_silence": {
+      "name": "Silencing Shot",
+      "icon": "🔇",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 0.6,
+      "stamina_cost": 25,
+      "effects_on_hit": [
+        { "type": "silence", "magnitude": 1, "duration": 1, "chance": 0.70 }
+      ],
+      "effects_on_self": []
+    },
+
+    "fire_staff_fireball": {
+      "name": "Fireball",
+      "icon": "🔥",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 1.6,
+      "stamina_cost": 25,
+      "effects_on_hit": [
+        { "type": "burn", "magnitude": 15, "duration": 3, "chance": 0.80, "stackable": true, "max_stacks": 2 }
+      ],
+      "effects_on_self": []
+    },
+
+    "fire_staff_immolate": {
+      "name": "Immolate",
+      "icon": "🌋",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 0.8,
+      "stamina_cost": 30,
+      "effects_on_hit": [
+        { "type": "burn", "magnitude": 25, "duration": 4, "chance": 1.0, "stackable": true, "max_stacks": 2 }
+      ],
+      "effects_on_self": []
+    },
+
+    "fire_staff_scorch": {
+      "name": "Scorch",
+      "icon": "✨",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 2.0,
+      "stamina_cost": 40,
+      "effects_on_hit": [
+        { "type": "burn", "magnitude": 30, "duration": 5, "chance": 1.0, "stackable": true, "max_stacks": 2 }
+      ],
+      "effects_on_self": []
+    },
+
+    "frost_staff_frostbolt": {
+      "name": "Frostbolt",
+      "icon": "❄",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 1.4,
+      "stamina_cost": 20,
+      "effects_on_hit": [
+        { "type": "speedDebuff", "magnitude": 0.30, "duration": 2, "chance": 1.0 },
+        { "type": "freeze",      "magnitude": 1,    "duration": 1, "chance": 0.25 }
+      ],
+      "effects_on_self": []
+    },
+
+    "frost_staff_blizzard": {
+      "name": "Blizzard",
+      "icon": "🌨",
+      "target": "single",
+      "hits": 2,
+      "damage_mult": 0.7,
+      "stamina_cost": 30,
+      "effects_on_hit": [
+        { "type": "speedDebuff", "magnitude": 0.40, "duration": 3, "chance": 1.0 },
+        { "type": "freeze",      "magnitude": 1,    "duration": 1, "chance": 0.35 }
+      ],
+      "effects_on_self": []
+    },
+
+    "frost_staff_shatter": {
+      "name": "Shatter",
+      "icon": "💎",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 2.2,
+      "stamina_cost": 40,
+      "effects_on_hit": [],
+      "effects_on_self": []
+    },
+
+    "holy_staff_mend": {
+      "name": "Mend",
+      "icon": "✨",
+      "target": "self",
+      "hits": 0,
+      "damage_mult": 0,
+      "stamina_cost": 20,
+      "effects_on_hit": [],
+      "effects_on_self": [
+        { "type": "regen", "magnitude": 30, "duration": 3, "chance": 1.0, "stackable": true, "max_stacks": 2 }
+      ]
+    },
+
+    "holy_staff_smite": {
+      "name": "Smite",
+      "icon": "⚡",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 1.3,
+      "stamina_cost": 25,
+      "effects_on_hit": [
+        { "type": "stun", "magnitude": 1, "duration": 1, "chance": 0.30 }
+      ],
+      "effects_on_self": []
+    },
+
+    "holy_staff_consecrate": {
+      "name": "Consecrate",
+      "icon": "🌟",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 1.0,
+      "stamina_cost": 30,
+      "effects_on_hit": [
+        { "type": "burn",      "magnitude": 12, "duration": 4, "chance": 1.0, "stackable": true, "max_stacks": 2 },
+        { "type": "armorBreak","magnitude": 0.15,"duration": 3, "chance": 0.60 }
+      ],
+      "effects_on_self": [
+        { "type": "regen", "magnitude": 15, "duration": 2, "chance": 1.0, "stackable": true, "max_stacks": 2 }
+      ]
+    },
+
+    "cursed_staff_drain": {
+      "name": "Life Drain",
+      "icon": "💜",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 1.1,
+      "stamina_cost": 22,
+      "effects_on_hit": [
+        { "type": "corruption", "magnitude": 8, "duration": 4, "chance": 1.0 }
+      ],
+      "effects_on_self": [
+        { "type": "regen", "magnitude": 12, "duration": 2, "chance": 1.0, "stackable": true, "max_stacks": 2 }
+      ]
+    },
+
+    "cursed_staff_wither": {
+      "name": "Wither",
+      "icon": "🖤",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 0.5,
+      "stamina_cost": 25,
+      "effects_on_hit": [
+        { "type": "corruption",  "magnitude": 20, "duration": 5, "chance": 1.0 },
+        { "type": "attackDebuff","magnitude": 0.20,"duration": 3, "chance": 1.0 }
+      ],
+      "effects_on_self": []
+    },
+
+    "cursed_staff_curse": {
+      "name": "Curse",
+      "icon": "💀",
+      "target": "single",
+      "hits": 0,
+      "damage_mult": 0,
+      "stamina_cost": 20,
+      "effects_on_hit": [
+        { "type": "armorBreak",  "magnitude": 0.30, "duration": 4, "chance": 1.0 },
+        { "type": "corruption",  "magnitude": 10,   "duration": 4, "chance": 1.0 }
+      ],
+      "effects_on_self": []
+    },
+
+    "quarterstaff_strike": {
+      "name": "Staff Strike",
+      "icon": "🪄",
+      "target": "single",
+      "hits": 2,
+      "damage_mult": 0.60,
+      "stamina_cost": 15,
+      "effects_on_hit": [],
+      "effects_on_self": []
+    },
+
+    "quarterstaff_deflect": {
+      "name": "Deflect",
+      "icon": "🛡",
+      "target": "self",
+      "hits": 0,
+      "damage_mult": 0,
+      "stamina_cost": 20,
+      "effects_on_hit": [],
+      "effects_on_self": [
+        { "type": "armorBuff", "magnitude": 0.50, "duration": 2, "chance": 1.0 }
+      ]
+    },
+
+    "quarterstaff_energize": {
+      "name": "Energize",
+      "icon": "⚡",
+      "target": "self",
+      "hits": 0,
+      "damage_mult": 0,
+      "stamina_cost": 0,
+      "effects_on_hit": [],
+      "effects_on_self": [
+        { "type": "attackBuff", "magnitude": 0.20, "duration": 2, "chance": 1.0 },
+        { "type": "speedBuff",  "magnitude": 0.15, "duration": 2, "chance": 1.0 }
+      ]
+    },
+
+    "passive_retaliate": {
+      "name": "Retaliate",
+      "icon": "🛡",
+      "is_passive": true,
+      "trigger": "on_hit_received",
+      "trigger_chance": 0.35,
+      "target": "none",
+      "hits": 0,
+      "damage_mult": 0,
+      "stamina_cost": 0,
+      "effects_on_hit": [
+        { "type": "bleed", "magnitude": 6, "duration": 2, "chance": 1.0, "stackable": true, "max_stacks": 3 }
+      ],
+      "effects_on_self": []
+    },
+
+    "passive_fleet_foot": {
+      "name": "Fleet Foot",
+      "icon": "🥷",
+      "is_passive": true,
+      "trigger": "combat_start",
+      "trigger_chance": 1.0,
+      "target": "none",
+      "hits": 0,
+      "damage_mult": 0,
+      "stamina_cost": 0,
+      "effects_on_hit": [],
+      "effects_on_self": [
+        { "type": "speedBuff", "magnitude": 0.20, "duration": 99, "chance": 1.0 }
+      ]
+    },
+
+    "passive_thick_skin": {
+      "name": "Thick Skin",
+      "icon": "🦏",
+      "is_passive": true,
+      "trigger": "combat_start",
+      "trigger_chance": 1.0,
+      "target": "none",
+      "hits": 0,
+      "damage_mult": 0,
+      "stamina_cost": 0,
+      "effects_on_hit": [],
+      "effects_on_self": [
+        { "type": "armorBuff", "magnitude": 0.20, "duration": 99, "chance": 1.0 }
+      ]
+    },
+
+    "passive_arcane_mastery": {
+      "name": "Arcane Mastery",
+      "icon": "🌀",
+      "is_passive": true,
+      "trigger": "combat_start",
+      "trigger_chance": 1.0,
+      "target": "none",
+      "hits": 0,
+      "damage_mult": 0,
+      "stamina_cost": 0,
+      "effects_on_hit": [],
+      "effects_on_self": [
+        { "type": "attackBuff", "magnitude": 0.15, "duration": 99, "chance": 1.0 }
+      ]
+    },
+
+    "bite": {
+      "name": "Bite",
+      "icon": "🦷",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 1.0,
+      "stamina_cost": 0,
+      "effects_on_hit": [
+        { "type": "bleed", "magnitude": 8, "duration": 3, "chance": 0.50, "stackable": true, "max_stacks": 3 }
+      ],
+      "effects_on_self": []
+    },
+
+    "howl": {
+      "name": "Howl",
+      "icon": "🐺",
+      "target": "self",
+      "hits": 0,
+      "damage_mult": 0,
+      "stamina_cost": 0,
+      "effects_on_hit": [],
+      "effects_on_self": [
+        { "type": "attackBuff", "magnitude": 0.30, "duration": 2, "chance": 1.0 }
+      ]
+    },
+
+    "slam": {
+      "name": "Slam",
+      "icon": "💥",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 1.4,
+      "stamina_cost": 0,
+      "effects_on_hit": [
+        { "type": "stun", "magnitude": 1, "duration": 1, "chance": 0.30 }
+      ],
+      "effects_on_self": []
+    },
+
+    "poison_spit": {
+      "name": "Poison Spit",
+      "icon": "🧪",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 0.6,
+      "stamina_cost": 0,
+      "effects_on_hit": [
+        { "type": "poison", "magnitude": 12, "duration": 5, "chance": 0.85, "stackable": true, "max_stacks": 5 }
+      ],
+      "effects_on_self": []
+    },
+
+    "regenerate": {
+      "name": "Regenerate",
+      "icon": "💚",
+      "target": "self",
+      "hits": 0,
+      "damage_mult": 0,
+      "stamina_cost": 0,
+      "effects_on_hit": [],
+      "effects_on_self": [
+        { "type": "regen", "magnitude": 30, "duration": 3, "chance": 1.0, "stackable": true, "max_stacks": 2 }
+      ]
+    },
+
+    "armor_crush": {
+      "name": "Armor Crush",
+      "icon": "🪨",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 1.2,
+      "stamina_cost": 0,
+      "effects_on_hit": [
+        { "type": "armorBreak", "magnitude": 0.30, "duration": 3, "chance": 1.0 }
+      ],
+      "effects_on_self": []
+    },
+
+    "void_corruption": {
+      "name": "Void Corruption",
+      "icon": "💀",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 0.5,
+      "stamina_cost": 0,
+      "effects_on_hit": [
+        { "type": "corruption",  "magnitude": 25, "duration": 4, "chance": 1.0 },
+        { "type": "armorBreak",  "magnitude": 0.20,"duration": 3, "chance": 1.0 }
+      ],
+      "effects_on_self": []
+    },
+
+    "enrage": {
+      "name": "Enrage",
+      "icon": "😡",
+      "target": "self",
+      "hits": 0,
+      "damage_mult": 0,
+      "stamina_cost": 0,
+      "effects_on_hit": [],
+      "effects_on_self": [
+        { "type": "attackBuff", "magnitude": 0.50, "duration": 3, "chance": 1.0 },
+        { "type": "speedBuff",  "magnitude": 0.30, "duration": 3, "chance": 1.0 }
+      ]
+    },
+
+    "web_shot": {
+      "name": "Web Shot",
+      "icon": "🕸",
+      "target": "single",
+      "hits": 1,
+      "damage_mult": 0.4,
+      "stamina_cost": 0,
+      "effects_on_hit": [
+        { "type": "speedDebuff", "magnitude": 0.50, "duration": 2, "chance": 0.90 }
+      ],
+      "effects_on_self": []
+    }
+  }
+}

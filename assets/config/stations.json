@@ -1,0 +1,76 @@
+{
+  "stations": [
+    {
+      "id": "ironhaven_blacksmith",
+      "name": "Blacksmith",
+      "icon": "⚒",
+      "type": "crafting",
+      "location_id": "ironhaven",
+      "activity_ids": ["craft_iron_sword", "craft_iron_helm"],
+      "extra": { "flavour": "The ringing of hammer on anvil echoes through the forge." }
+    },
+    {
+      "id": "ironhaven_smelting_oven",
+      "name": "Smelting Oven",
+      "icon": "🔥",
+      "type": "refining",
+      "location_id": "ironhaven",
+      "activity_ids": ["smelt_t1_bar", "smelt_t2_bar"],
+      "extra": { "flavour": "The oven roars with heat, ready to melt ore into ingots." }
+    },
+    {
+      "id": "ashgrove_woodmill",
+      "name": "Woodmill",
+      "icon": "🪵",
+      "type": "refining",
+      "location_id": "ashgrove",
+      "activity_ids": ["plane_t1_plank", "plane_t2_plank"],
+      "extra": { "flavour": "The great saw blade spins, turning raw timber into smooth planks." }
+    },
+    {
+      "id": "ashgrove_hunters_lodge",
+      "name": "Hunters Lodge",
+      "icon": "🏹",
+      "type": "crafting",
+      "location_id": "ashgrove",
+      "activity_ids": ["craft_iron_bow"],
+      "extra": { "flavour": "The lodge smells of pine resin and leather. Bows of all sizes hang from the walls." }
+    },
+    {
+      "id": "tanners_rest_tanning_rack",
+      "name": "Tanning Rack",
+      "icon": "🧵",
+      "type": "refining",
+      "location_id": "tanners_rest",
+      "activity_ids": ["tan_t1_leather", "tan_t2_leather"],
+      "extra": { "flavour": "Hides stretch across wooden frames, slowly curing in the open air." }
+    },
+    {
+      "id": "tanners_rest_leatherworker",
+      "name": "Leatherworker",
+      "icon": "🥋",
+      "type": "crafting",
+      "location_id": "tanners_rest",
+      "activity_ids": ["craft_leather_chest"],
+      "extra": { "flavour": "Needles and awls hang from the workbench. Every stitch is precise." }
+    },
+    {
+      "id": "silkwatch_loom",
+      "name": "Loom",
+      "icon": "🧶",
+      "type": "refining",
+      "location_id": "silkwatch",
+      "activity_ids": ["spin_t1_cloth", "spin_t2_cloth"],
+      "extra": { "flavour": "The loom clicks rhythmically, weaving raw fibres into fine cloth." }
+    },
+    {
+      "id": "silkwatch_arcane_tree",
+      "name": "Arcane Tree",
+      "icon": "✨",
+      "type": "crafting",
+      "location_id": "silkwatch",
+      "activity_ids": [],
+      "extra": { "flavour": "An ancient tree humming with arcane energy. Its branches reach beyond this world." }
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "locations": [
+    {
+      "id": "ironhaven",
+      "name": "Ironhaven",
+      "icon": "⚒",
+      "tier": 1,
+      "danger": "none",
+      "is_safe": true,
+      "is_teleport_hub": true,
+      "travel_steps": 0,
+      "nearest_hub": null,
+      "activity_ids": ["smelt_t1_bar", "smelt_t2_bar", "craft_iron_sword", "craft_iron_helm"],
+      "resource_availability": {}
+    },
+    {
+      "id": "ashgrove",
+      "name": "Ashgrove",
+      "icon": "🌲",
+      "tier": 1,
+      "danger": "none",
+      "is_safe": true,
+      "is_teleport_hub": true,
+      "travel_steps": 0,
+      "nearest_hub": null,
+      "activity_ids": ["plane_t1_plank", "plane_t2_plank", "craft_iron_bow"],
+      "resource_availability": {}
+    },
+    {
+      "id": "tanners_rest",
+      "name": "Tanners' Rest",
+      "icon": "🦌",
+      "tier": 1,
+      "danger": "none",
+      "is_safe": true,
+      "is_teleport_hub": true,
+      "travel_steps": 0,
+      "nearest_hub": null,
+      "activity_ids": ["tan_t1_leather", "tan_t2_leather", "craft_leather_chest"],
+      "resource_availability": {}
+    },
+    {
+      "id": "silkwatch",
+      "name": "Silkwatch",
+      "icon": "✨",
+      "tier": 1,
+      "danger": "none",
+      "is_safe": true,
+      "is_teleport_hub": true,
+      "travel_steps": 0,
+      "nearest_hub": null,
+      "activity_ids": ["spin_t1_cloth", "spin_t2_cloth"],
+      "resource_availability": {}
+    },
+    {
+      "id": "millhaven_fields",
+      "name": "Millhaven Fields",
+      "icon": "🌾",
+      "tier": 1,
+      "danger": "safe",
+      "is_safe": true,
+      "is_teleport_hub": false,
+      "travel_steps": 200,
+      "nearest_hub": "ironhaven",
+      "activity_ids": ["mine_iron", "gather_fibre"],
+      "resource_availability": {
+        "iron_ore": 0.85,
+        "rough_fibre": 0.70
+      }
+    },
+    {
+      "id": "thornwood_commons",
+      "name": "Thornwood Commons",
+      "icon": "🌲",
+      "tier": 1,
+      "danger": "safe",
+      "is_safe": true,
+      "is_teleport_hub": false,
+      "travel_steps": 200,
+      "nearest_hub": "ashgrove",
+      "activity_ids": ["forage_oak", "gather_herbs"],
+      "resource_availability": {
+        "oak_wood": 0.90,
+        "common_root": 0.60
+      }
+    },
+    {
+      "id": "ashfall_ridge",
+      "name": "Ashfall Ridge",
+      "icon": "🌋",
+      "tier": 2,
+      "danger": "safe",
+      "is_safe": true,
+      "is_teleport_hub": false,
+      "travel_steps": 500,
+      "nearest_hub": "ironhaven",
+      "activity_ids": ["mine_corundum", "gather_linen"],
+      "resource_availability": {
+        "corundum_ore": 0.72,
+        "linen": 0.50
+      }
+    },
+    {
+      "id": "verdant_mire",
+      "name": "The Verdant Mire",
+      "icon": "🌿",
+      "tier": 2,
+      "danger": "safe",
+      "is_safe": true,
+      "is_teleport_hub": false,
+      "travel_steps": 500,
+      "nearest_hub": "tanners_rest",
+      "activity_ids": ["hunt_hide", "gather_ironweed"],
+      "resource_availability": {
+        "coarse_hide": 0.80,
+        "ironweed": 0.55
+      }
+    },
+    {
+      "id": "ironspine_mts",
+      "name": "Ironspine Mountains",
+      "icon": "⛰",
+      "tier": 3,
+      "danger": "borderlands",
+      "is_safe": false,
+      "is_teleport_hub": false,
+      "travel_steps": 1000,
+      "nearest_hub": "ironhaven",
+      "activity_ids": ["mine_ironspine", "hunt_thick_hide"],
+      "resource_availability": {
+        "corundum_ore": 0.55,
+        "thick_hide": 0.40
+      }
+    },
+    {
+      "id": "twilight_forest",
+      "name": "Twilight Forest",
+      "icon": "🌑",
+      "tier": 4,
+      "danger": "cursed",
+      "is_safe": false,
+      "is_teleport_hub": false,
+      "travel_steps": 2000,
+      "nearest_hub": "ashgrove",
+      "activity_ids": ["forage_ashwood", "hunt_runed_hide"],
+      "resource_availability": {
+        "ashwood": 0.45,
+        "runed_hide": 0.30
+      }
+    }
+  ]
+}
