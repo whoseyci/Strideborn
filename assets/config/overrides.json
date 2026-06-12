@@ -1,0 +1,7 @@
+{
+  "_comment": "Live balance overrides. Same shapes as the bundled config files. Empty lists = no changes. Edit + push to main = all clients update on next launch.",
+  "abilities": [],
+  "monsters": [],
+  "zone_nodes": [],
+  "items": []
+}

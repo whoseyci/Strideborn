@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'game_config.dart';
 import 'combat_config.dart';
 import '../map/map_generator.dart';
+import '../services/remote_config_service.dart';
 
 // ════════════════════════════════════════════════════════
 // CONFIG LOADER
@@ -136,10 +137,17 @@ class ConfigLoader {
     }
   }
 
-  /// Background fetch of PocketBase config overrides.
-  /// No-op if PocketBase is unreachable — bundled config remains in effect.
+  /// Background fetch of remote config overrides (GitHub-hosted JSON).
+  /// No-op if unreachable — bundled config remains in effect.
   static Future<void> fetchOverrides() async {
-    // Wire to PbService.fetchConfigOverrides() + applyServerOverrides() when ready.
+    final data = await RemoteConfigService.fetchOverrides();
+    if (data == null) return;
+    applyServerOverrides(
+      abilities: (data['abilities'] as List?)?.cast<Map<String, dynamic>>(),
+      monsters: (data['monsters'] as List?)?.cast<Map<String, dynamic>>(),
+      zoneNodes: (data['zone_nodes'] as List?)?.cast<Map<String, dynamic>>(),
+      items: (data['items'] as List?)?.cast<Map<String, dynamic>>(),
+    );
   }
 
   // ── Utility ───────────────────────────────────────────────────
